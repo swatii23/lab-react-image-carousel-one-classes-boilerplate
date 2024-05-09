@@ -1,1 +1,37 @@
 /* write your carousel css in this file */
+.carousel {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+  }
+    
+  .images img {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .images img.active {
+    display: block;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 100;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
